@@ -108,3 +108,5 @@ while gameRunning:
     checkIfTie(board)
     switchPlayer()
     computer(board)
+    checkIfWin(board)
+    checkIfTie(board)
