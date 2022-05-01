@@ -82,9 +82,18 @@ def checkIfWin(board):
         print(f"The winner is {winner}!")
         gameRunning = False
 
+# switch player
+def switchPlayer():
+    global currentPlayer
+    if currentPlayer == "X":
+        currentPlayer = "O"
+    else:
+        currentPlayer = "X"
+
 
 while gameRunning:
     printBoard(board)
     playerInput(board)
     checkIfWin(board)
     checkIfTie(board)
+    switchPlayer()
